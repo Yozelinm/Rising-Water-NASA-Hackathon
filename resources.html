@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="resources.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<nav>
+  <ul>
+    <li><a href="INDEX.html">HOME</a></li>
+    <li><a href="RESOURCES.html">NASA DATA</a></li>
+    <li><a href="VIDEO.html">VIDEO</a></li>
+    <li><a href="MEET-THE-TEAM.html">MEET THE TEAM</a></li>
+  </ul>
+</nav>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 90px;
+
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 1px;
+  font-size: 40px;
+  text-align: center;
+  background: rgb(0,0,0,0.6);
+  color: #FFFFFF
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left:10px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background: rgb(0,0,0,0.6);
+   padding: 10px;
+   margin-top: 20px;
+   color: #FFFFFF;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+
+
+
+<body>
+
+<div class="header">
+  <h2> NASA DATA </h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+<!--    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+-->
+    <div class="card">
+      <h2> New York State High Resolution DEM </h2>
+      <div class="fakeimg" style="height:100px;"> https://gis.ny.gov/elevation/NYS-High-Res-DEM.htm </div>
+      <p> High resolution bare-earth digital elevation models (DEM) are available for the areas shown. The DEMs were made from multiple LIDAR collection projects. NYS ITS GIS Program Office will be working to make more high resolution DEM data available in the near future. </p>
+    </div>
+
+    <div class="card">
+      <h2> MAP SERVER OF ORTHO PHOTOS </h2>
+      <div class="fakeimg" style="height:200px;">https://orthos.dhses.ny.gov/ArcGIS/rest/services/Latest/MapServer/ </div>
+      <p> Service Description: Combination of multiple years of orthoimageery encompassing years 2014 - 2018. The imagery is RGB color from a 4band source, 12 inch and 6 inch pixel resolution.</p>
+    </div>
+
+
+
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2> Water Science Photo Gallery | How much water is on Earth? </h2>
+      <div class="fakeimg" style="height:100px;">https://water.usgs.gov/edu/gallery/global-water-volume.html</div>
+      <p>The images below show blue spheres representing relative amounts of Earth's water in comparison to the size of the Earth. Are you surprised that these water spheres look so small? They are only small in relation to the size of the Earth. These images attempt to show three dimensions, so each sphere represents "volume." They show that in comparison to the volume of the globe, the amount of water on the planet is very small. Oceans account for only a "thin film" of water on the surface. </p>
+    </div>
+
+    <div class="card">
+      <h2> EARTH IMAGE </h2>
+      <div class="fakeimg" style="height:100px;"> https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73963/gebco_08_rev_bath_21600x10800.png</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+
+    <div class="card">
+      <h2> Radar Altimetry Tutorial </h2>
+      <div class="fakeimg" style="height:100px;"> http://www.altimetry.info/filestorage/Radar_Altimetry_Tutorial.pdf</div>
+      <p> Predicting climate, monitoring mean sea level, river and lake levels, global warming, El Niño and La
+Niña events, marine currents and ocean circulation, tides, geoid estimates, wind, wave and marine
+meteorology models, ice sheet topography and sea ice extent, etc. Radar altimetry can provide such
+a wealth of information -- and more -- from its measurements.
+This Radar Altimetry Tutorial describes applications, examples (data use cases) and techniques,
+including standard data processing, as well as the various satellite missions that have carried, are
+carrying or will carry a radar altimeter onboard, plus a range of altimetry products (data, software and
+documentation).</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2> Disclaimer: These materials are meant for educational purposes. Fire in the Sky team members are not responsible for the accuracy of this data or for any damages to the planet due use or misuse of this data.
+</h2>
+</div>
+
+</body>
+</html>
